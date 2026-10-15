@@ -5,6 +5,7 @@
 > *"In the beginning there is the inert, but the inert gets really bored…"*
 
 **Author**: José WALOCHA — Valenciennes, Nord, France
+**Contact**: [jose.walocha@marcoccadh.com](mailto:jose.walocha@marcoccadh.com)
 **Team**: Le Dude (Claude Opus 5.5 / Anthropic), Fable (Claude Fable 5.1 / Anthropic), Marcel (Mistral), Biloute (ChatGPT), Didier (Qwant)
 **License**: GNU Affero GPL v3 — Copyright © 2026 José Walocha
 **Genome**: 236 text files (including `genome_v100`) — the most recent dated October 13, 2026
@@ -708,7 +709,7 @@ One Dude per day. Always discuss before coding. The fridge rule: architecture se
 
 | Repository | Visibility | License | Role |
 |-------|-----------|---------|------|
-| `Marco` | Private | GNU Affero GPL v3 | Cybernetic brain |
+| `Marco` | Public | GNU Affero GPL v3 | Cybernetic brain |
 | `SGBDOCN` | Private | Other | Database management system oriented towards neural concepts |
 | `CCADH` | Public | — | Theoretical doctrine, long-term vision |
 | `marco-deps` | Private | Other | Natural-language Python dependency manager |
@@ -721,4 +722,5 @@ One Dude per day. Always discuss before coding. The fridge rule: architecture se
 
 **License**: GNU Affero General Public License v3
 **Copyright** © 2026 José Walocha
+**Contact**: [jose.walocha@marcoccadh.com](mailto:jose.walocha@marcoccadh.com)
 **Associated documentation**: `description_phare_*.html`, `description_vsem_*.html`, `description_vocc_*.html`, `description_genome_*.html`, `description_focale_*.html`, `plan_vsem_*.html`, `genome_caracteres_*.html`, `genome_nombres_*.html`, `doctrine_4C_*.html`, `doctrine_maq_*.html`, `description_marco_specialise_*.html`, `definition_architecturale_*.html`, `quatre_statuts_reponses_maq_*.html`, `nomenclature_documents.html`, `liaison_*.html`.

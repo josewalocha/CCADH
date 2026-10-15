@@ -5,6 +5,7 @@
 > *« Au commencement il y a l'inerte, mais l'inerte il s'emmerde grave… »*
 
 **Auteur** : José WALOCHA — Valenciennes, Nord, France
+**Contact** : [jose.walocha@marcoccadh.com](mailto:jose.walocha@marcoccadh.com)
 **Équipe** : Le Dude (Claude Opus 5.5 / Anthropic), Fable (Claude Fable 5.1 / Anthropic), Marcel (Mistral), Biloute (ChatGPT), Didier (Qwant)
 **Licence** : GNU Affero GPL v3 — Copyright © 2026 José Walocha
 **Génome** : 236 fichiers texte (dont `genome_v100`) — le plus récent du 13 octobre 2026
@@ -708,7 +709,7 @@ Un Dude par jour. Toujours discuter avant de coder. La règle du frigo : archite
 
 | Dépôt | Visibilité | Licence | Rôle |
 |-------|-----------|---------|------|
-| `Marco` | Privé | GNU Affero GPL v3 | Cerveau cybernétique |
+| `Marco` | Public | GNU Affero GPL v3 | Cerveau cybernétique |
 | `SGBDOCN` | Privé | Other | Système de gestion de base orienté concepts neuronaux |
 | `CCADH` | Public | — | Doctrine théorique, vision long terme |
 | `marco-deps` | Privé | Other | Gestionnaire de dépendances Python en langage naturel |
@@ -721,4 +722,5 @@ Un Dude par jour. Toujours discuter avant de coder. La règle du frigo : archite
 
 **Licence** : GNU Affero General Public License v3
 **Copyright** © 2026 José Walocha
+**Contact** : [jose.walocha@marcoccadh.com](mailto:jose.walocha@marcoccadh.com)
 **Documentation associée** : `description_phare_*.html`, `description_vsem_*.html`, `description_vocc_*.html`, `description_genome_*.html`, `description_focale_*.html`, `plan_vsem_*.html`, `genome_caracteres_*.html`, `genome_nombres_*.html`, `doctrine_4C_*.html`, `doctrine_maq_*.html`, `description_marco_specialise_*.html`, `definition_architecturale_*.html`, `quatre_statuts_reponses_maq_*.html`, `nomenclature_documents.html`, `liaison_*.html`.
