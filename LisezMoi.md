@@ -522,7 +522,7 @@ Le programme tient en 19 modules Python (26 310 lignes), sur la seule bibliothè
 | `marco_5250.py` | La console, « coquille AS/400 » : le menu Marco MAD, le choix et la naissance des cerveaux, le dialogue, la lecture, la leçon, les bancs |
 | `fils.py` | La table des fils : le fichier texte, la vue en mémoire, l'écrivain unique et les cinq lectures |
 | `noyau.py` | Le noyau du BSC : des lignes « si … alors … » lues par les phares, rien d'autre |
-| `carte.py` | La carte cyber : le lecteur du noyau |
+| `carte.py` | La carte cyber, appelée la CPU depuis le 11/10 : le lecteur du noyau |
 | `poignee.py` | La poignée : le passage sur la table des fils (tenir, fermer, chercher, pirouette, écrire) |
 | `doigt.py` | Le doigt de lecture : les rections tissées sur la table, écrites en MEQ au tic de la phrase |
 | `lecture.py` | L'apprentissage par texte : lire un fichier par le doigt, sur la table seule |
@@ -538,7 +538,7 @@ Le programme tient en 19 modules Python (26 310 lignes), sur la seule bibliothè
 | `tableau_marco.py` | Le tableau de bord : le scribe qui écrit l'état, la page qui le montre |
 | `outils_maintenance.py` | Les outils de maintenance du cerveau et du génome |
 | `fils_reparer.py` | Trouver, dire et retirer les lignes difformes d'un fichier de lignes, le vécu d'abord |
-| `genome/` | 236 fichiers texte : 53 fichiers de fils (`*_fils.tsv`, parfois compressés, 9,5 millions de fils) et 183 fichiers de lignes du noyau (`*_lignes.csv`, 88 251 lignes, lisibles dans Excel) |
+| `genome/` | 236 fichiers texte : 53 fichiers de fils (`*_fils.tsv`, parfois compressés, 9,5 millions de fils) et 183 fichiers de lignes (`*_lignes.csv`, 88 251 lignes, lisibles dans Excel) |
 | `cerveaux/<nom>/` | Un cerveau par dossier : `cerveau_Marco.tsv.gz` et ses trois enregistrements d'avant, datés, à côté |
 | `ressources/` | Les dossiers de travail : les cahiers d'apprentissage, les salles de test et leurs comptes rendus, les textes, les commentaires de lecture, les relevés, le tableau de bord |
 
@@ -556,7 +556,7 @@ Depuis la mi-septembre 2026, Marco a changé de corps. Le 19/09, *« on est en R
 
 - **La table des fils** (`fils.py`, 15/09). Toute la mémoire est faite de fils : (de, vers, rang, tic). Le génome est l'ADN, lu au tic 0, à la naissance ; le vécu s'écrit ensuite, instant après instant, chaque fil à son tic. Une **MEQ** (mise en équation) est un fait tenu sous un nom (`M-…`), ses mots à leurs rangs. La structure porte un nom, `nodale-1` (02/10), inscrit dans l'identité de chaque cerveau.
 - **Le génome en texte.** Plus de pkl : des fichiers texte, `*_fils.tsv` et, depuis le 25/09, `*_lignes.csv`, aux colonnes nommées, lisibles dans Excel. Un génome porte son nom sans version : un fichier neuf remplace l'ancien sous le même nom, le zip daté sert de témoin.
-- **Le noyau** (`noyau.py`, du 24/09 à la v53h du 11/10). Les règles quittent le Python pour le génome, lot après lot : depuis le 11/10, plus aucune méthode du lot 1 n'est en Python dans la carte, le lecteur du noyau. Le 05/10, *« Le BSC c'est des règles codées en MEQ c'est tout »* : les 35 981 hexalignes que la carte tirait des anciennes lignes deviennent 1 206 règles au génome. Une règle, ce sont trois MEQ : le *si*, le *alors*, et la règle qui les lie.
+- **Le noyau** (`noyau.py`, du 24/09 à la v53h du 11/10). Les règles quittent le Python pour le génome, lot après lot : depuis le 11/10, plus aucune méthode du lot 1 n'est en Python dans la carte (la CPU, depuis le 11/10), le lecteur du noyau. Le 05/10, *« Le BSC c'est des règles codées en MEQ c'est tout »* : les 35 981 hexalignes que la carte tirait des anciennes lignes deviennent 1 206 règles au génome. Une règle, ce sont trois MEQ : le *si*, le *alors*, et la règle qui les lie.
 - **La lecture.** La poignée passe le texte sur la table : chaque forme y est retrouvée ou posée (le 16/09, un glossaire de 166 809 caractères en 0,24 s) ; le doigt écrit les rections en MEQ, au tic de la phrase ; Protée, passé au noyau en lignes le 25/09, désigne qui est derrière *il*, *elle*, *tu*, en pesant les probables par leurs témoins.
 - **La réponse.** Le précipité croise sur la vue, du rare vers l'immense ; la bouche dit en français ce qu'il a élu, avec les mots de Marco, « jamais un pochoir » — sinon, « je ne sais pas ». La machine à tournure n'est qu'amorcée : `tournure.py` est du Python écrit pour être remplacé par des lignes.
 - **Les daimons.** La machine à pourquoi (`trou.py`) : un trou est une boucle ouverte dans son contexte, avec sa charge — *« Un je ne sais pas n'est pas un trou comblé c'est une information au dire »* (02/10) ; le stress qui dure ; le Continuer, boucle initiale lue au génome (« tant que vie → vit »), que rien ne ferme ni n'oublie ; la révision, où l'oubli est un fil daté et rien n'est effacé ; les deux moi : à chaque instant, le moi présent et le moi passé répondent, et leur comparaison dit le déjà-vu, le trou ou l'écart. Les daimons à tête chercheuse (`chercheur.py`) : un daimon par phare de la scène ; le compte de leurs croisements fait le contexte, leurs grappes sont des sens contextuels.
