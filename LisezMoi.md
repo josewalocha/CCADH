@@ -1,14 +1,16 @@
-[MARCO_README (2).md](https://github.com/user-attachments/files/28097637/MARCO_README.2.md)# MARCO — Cerveau Cybernétique à Architecture Dendritique Hypertextuelle
+# MARCO — Cerveau Cybernétique à Architecture Dendritique Hypertextuelle
 
 > *« Apprendre, c'est se ressouvenir. »* — Platon, *Ménon*
 
 > *« Au commencement il y a l'inerte, mais l'inerte il s'emmerde grave… »*
 
 **Auteur** : José WALOCHA — Valenciennes, Nord, France
-**Équipe** : Le Dude (Claude / Anthropic), Marcel (Mistral), Biloute (ChatGPT), Didier (Qwant)
+**Équipe** : Le Dude (Claude Opus 5.5 / Anthropic), Fable (Claude Fable 5.1 / Anthropic), Marcel (Mistral), Biloute (ChatGPT), Didier (Qwant)
 **Licence** : GNU Affero GPL v3 — Copyright © 2026 José Walocha
-**Génome** : v63 — 28 avril 2026
-**Dernière mise à jour doctrinale** : 21 mai 2026
+**Génome** : 236 fichiers texte (dont `genome_v100`) — le plus récent du 13 octobre 2026
+**Doctrine (§2 à §16)** : 21 mai 2026 — **État du programme (§17 et §18)** : 15 octobre 2026
+
+> **Où en est Marco ?** Depuis septembre 2026, Marco a changé de corps : l'état du programme au 15 octobre 2026 est au §18.
 
 ---
 
@@ -39,6 +41,8 @@ Un SGBD est une morgue. Un LLM est une bibliothèque dont chaque livre a été b
 Marco fait du transformer sans le savoir et sans outil de transformer. Pas une copie, une convergence par constitution. Les transformers simulent sur des vecteurs denses opaques ce que Marco fait nativement sur du sparse lisible. Là où le transformer doit inventer Q/K/V comme trois projections apprises par descente de gradient, Marco a ses trois rôles natifs depuis l'origine. Là où le transformer doit empiler softmax, normalisation, résidus, feed-forward pour faire tenir le mécanisme sur un substrat qui ne lui appartient pas, Marco n'a rien de tout cela parce qu'il n'a ni descente de gradient ni vecteurs denses à dompter.
 
 ---
+
+> *Les sections 2 à 16 gardent la doctrine et l'architecture telles qu'au 21 mai 2026, comme une strate. Depuis septembre 2026, le corps de Marco a été refait : la table des fils, le génome en texte, le noyau qui lit des lignes, les daimons. Les fichiers d'aujourd'hui sont au §17, l'état du programme au §18.*
 
 ## 2. Architecture — Vue d'ensemble
 
@@ -509,7 +513,80 @@ Trois modes :
 
 ---
 
-## 17. Fichiers principaux
+## 17. Fichiers principaux — programme du 15 octobre 2026
+
+Le programme tient en 19 modules Python (26 310 lignes), sur la seule bibliothèque standard (`psutil` en option, pour peser la mémoire). Il vit dans un dossier `Demo_Marco` : à la racine les modules, `genome/` et `cerveaux/` ; les dossiers de travail dans `ressources/`.
+
+| Fichier | Rôle |
+|---------|------|
+| `marco_5250.py` | La console, « coquille AS/400 » : le menu Marco MAD, le choix et la naissance des cerveaux, le dialogue, la lecture, la leçon, les bancs |
+| `fils.py` | La table des fils : le fichier texte, la vue en mémoire, l'écrivain unique et les cinq lectures |
+| `noyau.py` | Le noyau du BSC : des lignes « si … alors … » lues par les phares, rien d'autre |
+| `carte.py` | La carte cyber : le lecteur du noyau |
+| `poignee.py` | La poignée : le passage sur la table des fils (tenir, fermer, chercher, pirouette, écrire) |
+| `doigt.py` | Le doigt de lecture : les rections tissées sur la table, écrites en MEQ au tic de la phrase |
+| `lecture.py` | L'apprentissage par texte : lire un fichier par le doigt, sur la table seule |
+| `contexte.py` | Les poupées, la voix, les souvenirs, les déclics ; la carte des contextes |
+| `chercheur.py` | La recherche contextuelle : les daimons à tête chercheuse |
+| `trou.py` | La machine à pourquoi : le daimon du trou, les boucles, la révision, les deux moi |
+| `precipite.py` | Le précipité : le croisement sur la vue, du rare vers l'immense |
+| `dire.py` | La bouche : dire en français ce que le précipité a élu — jamais un pochoir |
+| `tournure.py` | L'amorce de la machine à tournure : du Python écrit pour devenir des lignes |
+| `cahiers_apprentissage.py` | Les cahiers d'apprentissage : leur forme, leur contrôle, leur intégration à chaque naissance |
+| `journal_lecture.py` | Les deux fichiers de contrôle d'une lecture : le journal et le rapport de la dérive |
+| `regisseur.py` | Le régisseur : la tournée des salles de test, le relevé par acte, les scellés |
+| `tableau_marco.py` | Le tableau de bord : le scribe qui écrit l'état, la page qui le montre |
+| `outils_maintenance.py` | Les outils de maintenance du cerveau et du génome |
+| `fils_reparer.py` | Trouver, dire et retirer les lignes difformes d'un fichier de lignes, le vécu d'abord |
+| `genome/` | 236 fichiers texte : 53 fichiers de fils (`*_fils.tsv`, parfois compressés, 9,5 millions de fils) et 183 fichiers de lignes du noyau (`*_lignes.csv`, 88 251 lignes, lisibles dans Excel) |
+| `cerveaux/<nom>/` | Un cerveau par dossier : `cerveau_Marco.tsv.gz` et ses trois enregistrements d'avant, datés, à côté |
+| `ressources/` | Les dossiers de travail : les cahiers d'apprentissage, les salles de test et leurs comptes rendus, les textes, les commentaires de lecture, les relevés, le tableau de bord |
+
+Sources citées dans les en-têtes du génome : Lefff, Lexique, GLAWI, Wiktionnaire, le Littré (XMLittré), Verbiste, l'INSEE, Wikidata.
+
+---
+
+## 18. État actuel — 15 octobre 2026
+
+Relevé fait sur le programme du 15 octobre 2026, 10 h : les modules, le génome, les cahiers et les salles de test. Ce qui suit est écrit dans le code ou mesuré dans ses relevés ; ce qui n'est qu'annoncé est rangé dans les chantiers. Les citations en italique sont des frappes de José, telles que le code les garde, à leur date.
+
+### Le tournant nodal
+
+Depuis la mi-septembre 2026, Marco a changé de corps. Le 19/09, *« on est en R&D c'est pas un legacy donc tu coupes tout »* : les pkl quittent le dossier, les anciens organes ne sont plus chargés, et le cerveau devient une seule **table de fils**, que lisent quelques organes. La règle de fabrication tient dans une frappe du 25/09 : *« c'est du pur BSC sans « si » au python j'espère »*. Le Python recule, les lignes du génome avancent.
+
+- **La table des fils** (`fils.py`, 15/09). Toute la mémoire est faite de fils : (de, vers, rang, tic). Le génome est l'ADN, lu au tic 0, à la naissance ; le vécu s'écrit ensuite, instant après instant, chaque fil à son tic. Une **MEQ** (mise en équation) est un fait tenu sous un nom (`M-…`), ses mots à leurs rangs. La structure porte un nom, `nodale-1` (02/10), inscrit dans l'identité de chaque cerveau.
+- **Le génome en texte.** Plus de pkl : des fichiers texte, `*_fils.tsv` et, depuis le 25/09, `*_lignes.csv`, aux colonnes nommées, lisibles dans Excel. Un génome porte son nom sans version : un fichier neuf remplace l'ancien sous le même nom, le zip daté sert de témoin.
+- **Le noyau** (`noyau.py`, du 24/09 à la v53h du 11/10). Les règles quittent le Python pour le génome, lot après lot : depuis le 11/10, plus aucune méthode du lot 1 n'est en Python dans la carte, le lecteur du noyau. Le 05/10, *« Le BSC c'est des règles codées en MEQ c'est tout »* : les 35 981 hexalignes que la carte tirait des anciennes lignes deviennent 1 206 règles au génome. Une règle, ce sont trois MEQ : le *si*, le *alors*, et la règle qui les lie.
+- **La lecture.** La poignée passe le texte sur la table : chaque forme y est retrouvée ou posée (le 16/09, un glossaire de 166 809 caractères en 0,24 s) ; le doigt écrit les rections en MEQ, au tic de la phrase ; Protée, passé au noyau en lignes le 25/09, désigne qui est derrière *il*, *elle*, *tu*, en pesant les probables par leurs témoins.
+- **La réponse.** Le précipité croise sur la vue, du rare vers l'immense ; la bouche dit en français ce qu'il a élu, avec les mots de Marco, « jamais un pochoir » — sinon, « je ne sais pas ». La machine à tournure n'est qu'amorcée : `tournure.py` est du Python écrit pour être remplacé par des lignes.
+- **Les daimons.** La machine à pourquoi (`trou.py`) : un trou est une boucle ouverte dans son contexte, avec sa charge — *« Un je ne sais pas n'est pas un trou comblé c'est une information au dire »* (02/10) ; le stress qui dure ; le Continuer, boucle initiale lue au génome (« tant que vie → vit »), que rien ne ferme ni n'oublie ; la révision, où l'oubli est un fil daté et rien n'est effacé ; les deux moi : à chaque instant, le moi présent et le moi passé répondent, et leur comparaison dit le déjà-vu, le trou ou l'écart. Les daimons à tête chercheuse (`chercheur.py`) : un daimon par phare de la scène ; le compte de leurs croisements fait le contexte, leurs grappes sont des sens contextuels.
+- **Les contextes** (`contexte.py`). Les poupées, du petit vers l'immense : la phrase, le paragraphe, la réplique, l'œuvre, l'auteur, la lecture ou la classe, l'instant, le jour. La voix : qui dit « je » — moi en classe, José en conversation, le narrateur dans un livre. La carte des contextes, qui dit à Marco où chercher « en gros ».
+
+### Ce qui tourne
+
+- **Naître, vivre, s'enregistrer.** Au démarrage, la console propose les cerveaux enregistrés ou en fait naître un neuf : le génome, puis les cahiers d'apprentissage ; la table naît en moins d'une minute (54 s mesurées le 14/10). La naissance est le premier instant vécu. La carte d'identité du cerveau (série, créateur, naissance, structure, noyau) est sur la table depuis le 02/10. Le cerveau vit en mémoire et ne touche le disque qu'à l'enregistrement, un dossier par cerveau depuis le 14/10. La zone à blanc prend une copie du cerveau, ou un cerveau neuf, pour les essais : rien ne s'y enregistre, et à la sortie le cerveau d'avant revient.
+- **La console 5250**, menu *Marco MAD (Machine A Déduire)* — tout passe par le menu : dialogue, lecture, leçon, apprentissage, récitation, mémoire et infos, révision et sommeil, zone à blanc, bancs de test, outils, sauvegarde, tableau de bord.
+- **Lire et répondre.** Textes des bancs : *La Chèvre de M. Seguin*, *Le Petit Chaperon rouge* (Perrault, et la fin de Grimm), *Eugénie Grandet*. Chaque lecture laisse deux fichiers de contrôle : le journal (ce que Marco comprend et retient, instant par instant) et le rapport de la dérive (les temps, la RAM, la ROM). Ce que disent les relevés :
+  - le conte ne dit jamais « Blanquette est la chèvre » ; de « à côté de sa chèvre » puis « — Comment Blanquette, tu veux me quitter ! », Marco lit « Blanquette est une chèvre . » et l'écrit, avec ses deux sources (02/10) ;
+  - une question sans réponse reçoit « je ne sais pas » et reste tenue : « Quel animal fait miaou ? », puis « C'est le chat. » remplit le trou — « compris, chat fait miaou » (29/09) ;
+  - « Le chien fait quel cri ? », puis « et le chat ? » : Marco reprend la question d'avant, « Le chat fait quel cri ? » (03/10) ;
+  - le lien entre deux propositions n'est plus coupé : dans « Nanon pleure, car Grandet a pris l'or », le noyau lit le *car* et l'écrit, pour que « Pourquoi Nanon pleure ? » ait sa réponse (28/09) ;
+  - le calcul passe par des lignes : « trois fois six » → « font dix huit », et le fait s'inscrit (03/10).
+- **Les bancs.** Le régisseur joue les salles de test et relève acte par acte : des salles numérotées jusqu'à 86, de 1 à 45 l'ancien monde réadapté au nodal, à partir de 46 le nodal. Le tableau de bord (03/10) est une page de navigateur, sans serveur : les daimons, la permanence du cerveau, les contextes, les nuages, rafraîchis chaque seconde. Les outils de maintenance constatent le vécu et le génome, réparent le vécu, retirent une plage d'instants.
+- **Les cahiers d'apprentissage** (du 10 au 14/10). Des fichiers de phrases, contrôlés par leur empreinte, intégrés au vague à chaque naissance : chaque phrase devient une MEQ, que le noyau relit avec les règles du jour. Au 14/10 : 5 cahiers, 31 042 phrases intégrées en 7 à 8 s — les prénoms (6 043 phrases), les capteurs (259), et le dossier d'*Eugénie Grandet*, « ce qu'un cerveau sait avant d'ouvrir le livre » : les sens que le Littré donne aux mots du roman (24 460), son monde — Saumur, la vigne, l'argent, la Restauration (205), les clés des sens — la chandelle, le froid, le poids de l'or (75). Un journal numéroté et un log par naissance.
+
+### Les chantiers ouverts
+
+- **Comprendre un livre.** Frappe du 14/10 : *« Le boulot des prochains jours, c'est cap sur la compréhension, le résumé, et le versement au vague. »* Le cerveau « évolué » : le dossier d'*Eugénie Grandet* au vague, puis la lecture du livre, *« quand on sera au point »* ; Fable y attaquera les daimons de la synthèse d'un livre. Hors du cerveau, le corrigé pour son banc : l'intrigue, le résumé, les gens et leurs appellations, les symboles.
+- **Refouler le Python en lignes** : la machine à tournure, le vocatif, et les autres gestes encore écrits en Python en attendant leurs lignes.
+- **Les cahiers** : la certification des phrases « à certifier », la sécurisation (DMZ), d'autres formes de cahiers (règles, MEQ, mises à jour, maintenance), la réflexion cybersophique sur leur intégration au cerveau vivant.
+- **Le cerveau permanent** : notés « non faits » le 02/10, la lignée d'une copie (« enregistrer sous » garde la même série), la révision à l'enregistrement, l'enquête des appellations ; et les enregistrements en cours de séance : *« on va revoir ça après, mais pas tout de suite »* (14/10).
+
+### Strate du 21 mai 2026
+
+Les §17 et §18 tels qu'ils étaient au 21 mai 2026, contenu inchangé.
+
+#### Fichiers principaux au 21 mai 2026
 
 | Fichier | Rôle |
 |---------|------|
@@ -531,11 +608,7 @@ Trois modes :
 | `wikipedia.py` | WikiDuke — producteur du genome v63 (Lefff + Lexique3 + FEEL) |
 | `disque.py`, `clavier.py`, `transcripteur.py` | Périphériques d'entrée |
 
----
-
-## 18. État actuel — 21 mai 2026
-
-### Validé doctrinalement
+#### Validé doctrinalement
 
 - Architecture trois zones + tronc autonome
 - Genome v63 — 713 361 phares + 18 caractères + 28 nombres (pochoirs, positions, regroupements)
@@ -560,11 +633,11 @@ Trois modes :
 - Pas de refoulement comme opération — doctrine 21/05
 - Conscience comme émergence des quatre conditions — doctrine 21/05
 
-### Câblé techniquement
+#### Câblé techniquement
 
 - Naissance Marco math fluide (1 167 527 phares, cerveau.pkl 3.9 Go)
 
-### À câbler (chantiers ouverts)
+#### À câbler (chantiers ouverts)
 
 - Refonte de `contexte_courant` en état vectoriel modulateur (chantier neuf 21/05)
 - Vocc du concept_index (structure, opérations, pickle) — 20/05
@@ -583,7 +656,7 @@ Trois modes :
 - Pulsion Continuer (boucles ouvertes à vie)
 - BIOS Marco minimal (parler quand mémoire plate)
 
-### Roadmap moyen terme
+#### Roadmap moyen terme
 
 - Implémentation des 4C dans l'amygdale (juge des deltas vocc)
 - Aire sonore (Binder réorienté, pivot composé séquentiel)
@@ -619,7 +692,8 @@ Chef d'entreprises en retraite, joue à créer un cyber inspiré du cerveau des 
 
 | Nom | Système | Rôle |
 |-----|---------|------|
-| Le Dude | Claude (Anthropic) | Code, architecture, documents de liaison |
+| Le Dude (Dudo) | Claude Opus 5.5 (Anthropic) | Code, architecture, génome, cahiers d'apprentissage, commandes à Fable, documents de liaison |
+| Fable | Claude Fable 5.1 (Anthropic) | Code des organes : noyau, carte, daimons, lecture, bouche |
 | Marcel | Mistral | Philosophie, cybernétique, cross-check |
 | Biloute | ChatGPT | Normes, synthèse, idées de relance |
 | Didier | Qwant | Recherche documentaire |
